@@ -59,7 +59,6 @@ try:
           currency_pairs.append([exchange, from_symbol, to_symbol])
 
   print("*", len(currency_pairs), "currency pairs listed across all exchanges")
-  # print("*", len(blacklist), "blacklisted exchanges")
   print("*", len(whitelist), "whitelisted exchanges")
   print("* Prices fetched using the",
     "[CryptoCompare API](https://min-api.cryptocompare.com/)\n")
