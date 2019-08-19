@@ -1,11 +1,11 @@
-all: tmp timestamp
-	./cerberus.py | tee --append tmp/readme.md
+all: tmp tmp/readme.md
 
 tmp:
 	mkdir -p tmp
 
+tmp/readme.md:
+	./cerberus.py | tee tmp/readme.md
+	echo Generated $(shell date) > tmp/readme.md
+
 deploy:
 	mv tmp/readme.md readme.md
-
-timestamp:
-	echo Generated $(shell date) > tmp/readme.md
