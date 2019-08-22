@@ -1,6 +1,6 @@
 language: python
 python: "3.6"
-script: make all deploy
+script: make trades deploy
 
 # This is implicit
 # pip install -r requirements
