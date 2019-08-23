@@ -1,7 +1,6 @@
 all: tmp
 
-trades: tmp
-	tmp/readme.md
+trades: tmp tmp/readme.md
 
 tmp:
 	mkdir -p tmp
